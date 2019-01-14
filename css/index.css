@@ -166,8 +166,7 @@ header nav a:last-child {
 
 
 .main-content {
-  border-top: 1px solid black;
-  margin-top: 76px;
+    margin-top: 76px;
   padding-top: 39px;
 }
 
@@ -178,6 +177,7 @@ header nav a:last-child {
   justify-content: center;
   align-items: center;
   bottom: 360px;
+  border-bottom: 1px solid black;
 }
 
 .main-content .top-content .text-content {
@@ -231,6 +231,17 @@ header nav a:last-child {
 .contact p {
   margin: 20px 0;
 }
+
+p.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 322px;
+  left: 20px;
+}
+
+
 
 footer {
   margin: 32px 0;
