@@ -150,10 +150,36 @@ h5 {
 }
 
 /* Your code starts here! */
+.container {
+  max-width: 800px;
+  /* border: 5px dashed pink; */
+}
+
+@media(max-width: 500px) {
+  .container {
+    max-width: 500px;
+}
+
+
+ /* max width means at the number and below do the following */
 
 h2 {
   font-family: "Anton", sans-serif;
 }
+
+@media(max-width: 500px) {
+  h2 {
+    color: blue;
+  }
+}
+@media(max-width: 500px) {
+  .logo-container {
+    display: flex;
+     align-items: center;
+    justify-content: center;
+  }
+}
+
 
 .static-navbar {
   /* position: fixed; */
@@ -163,12 +189,21 @@ h2 {
   z-index: 5;
 }
 
+
 nav {
   display: block;
   width: 880px;
   height: 100px;
   margin: 0 auto;
   position: relative;
+}
+
+@media(max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
 }
 
 nav a {
@@ -179,23 +214,61 @@ nav a {
   display: inline-block;
 }
 
+
+@media(max-width: 500px) {
+  nav a {
+   text-align: center;
+   margin: 0 auto;
+   width: 55%;
+   height: 300px;
+   font-size: 16px;
+   border: 1px solid rgb(176, 177, 178);
+   color: rgb(176, 177, 178);
+   padding-top: 2%;
+  }
+}
+
+
 nav a:hover {
   color: rgb(176, 177, 178);
 }
 
+@media(max-width: 500px) {
+  nav a:hover {
+    color: blue;
+  }
+}
+
+
+
 nav a:first-child {
   margin-left: 0;
 }
+@media(max-width: 500px) {
+  nav a {
+    margin-left: 0;
+  }
+}
+
+
 
 nav div {
-  display: inline-block;
+  display: display;
   position: absolute;
   right: 0;
 }
 
-img {
+
+.img-snippet {
   margin-top: 25px;
 }
+
+@media(max-width: 500px) {
+  .img-snippet {
+    display: none;
+  }
+}
+
 
 .website-wrapper {
   width: 880px;
@@ -215,14 +288,24 @@ header div {
   margin: 70px 0 0 85px;
 }
 
+
 header div h1 {
   font-size: 80px;
   margin-bottom: 30px;
 }
 
+@media(max-width: 500px) {
+  header div h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+}
+
+
 header div h1 span {
   display: block;
 }
+
 
 header div a {
   text-decoration: none;
@@ -255,8 +338,24 @@ header img {
   margin-right: 10px;
 }
 
+@media(max-width: 500px) {
+  .section-one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+}
+
 .middle-img {
   margin-top: 38px;
+}
+
+@media(max-width: 500px) {
+  .middle-img {
+    width: 54%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
 }
 
 .section-two {
@@ -271,8 +370,23 @@ header img {
   margin-right: 10px;
 }
 
+@media(max-width: 500px) {
+  .section-two div {
+   width: 55%;
+  } 
+}
+
+
 .section-two div p {
   line-height: 1.16;
+}
+
+
+@media(max-width: 500px) {
+  .section-two {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 address {
@@ -294,7 +408,25 @@ footer {
   text-align: center;
 }
 
+@media(max-width: 500px) {
+  footer  {
+  display: flex;
+  height: 100px;
+  }
+}
+
+
 footer p {
   margin-top: 54px;
   font-size: 14px;
+}
+
+@media(max-width: 500px) {
+  footer p {
+  display: flex;
+  margin-left: 18%;
+  }
+}
+
+
 }
